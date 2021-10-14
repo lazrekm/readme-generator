@@ -69,7 +69,7 @@ function writeToFile(fileName, data) {
     });
 };
 
-// function to initialize app
+// Function to initialize app
 function init() {
     promptUser();
 }
