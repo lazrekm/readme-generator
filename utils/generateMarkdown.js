@@ -1,4 +1,4 @@
-// function that returns a license badge based on which license is passed in
+// function that returns a license badge 
 
 function renderLicenseBadge(license) {
   if (license !== "None") {
@@ -8,21 +8,19 @@ function renderLicenseBadge(license) {
 }
 
 // function that returns the license link
-// If there is no license, return an empty string
 
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `\n* [License](#license)\n`;
+    return `\n * [License](#license)\n`;
   }
   return "";
 }
 
 // function that returns the license section of README
-// If there is no license, return an empty string
 
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `## License
+    return `
 
     This repository is licensed under the ${license} license`;
   }
@@ -32,36 +30,45 @@ function renderLicenseSection(license) {
 // function to generate markdown for README
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.projectName}
   ${renderLicenseBadge(data.license)}
 
   ## Description
-  ${data.description}
-  ## Table of Contents
+
+  ${data.projectDescription}
+  
+  ## Table of Contents 
+  
   * [Installation](#installation)
+  
   * [Usage](#usage)
-  * [License](#license)
+  ${renderLicenseLink(data.license)}
   * [Contributing](#contributing)
+  
   * [Tests](#tests)
+  
   * [Questions](#questions)
+  
   ## Installation
   To install dependencies, run the following:
+
   \`
   ${data.installation}
   \`
+  
   ## Usage
-  ${data.usage}
+  ${data.repoUsage}
   ## License
-  This repository is licensed under the ${data.license} license.
+  ${renderLicenseSection(data.license)} 
   ## Contributing
-  ${data.contribute}
+  ${data.contribution}
   ## Tests
   To run tests, run the following:
   \`
-  ${data.tests}
+  ${data.test}
   \`
   ## Questions
-  Questions about this repository? Please contact me at [${data.email}](mailto:${data.email}). View more of my work in GitHub at [${data.username}](https://github.com/${data.username}) 
+  Questions about this repository? Please contact me at [${data.email}](mailto:${data.email}). View more of my work in GitHub at [${data.userName}](https://github.com/lazrekm) 
   `;
   }
 
