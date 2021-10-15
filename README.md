@@ -20,7 +20,10 @@
   `
   npm i
   `
+  ## Usage 
   
+  [![usage video](usage.gif)](https://drive.google.com/file/d/1SomQEP8MdhxxJVNpEXU23SPRlAg_7DAd/view?usp=sharing "Click Me!")
+
   ## License
   
     This repository is licensed under the MIT license 
