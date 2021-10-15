@@ -3,7 +3,7 @@
 
   ## Description
 
-  Command line application that uses the inquirer npm package to prompt questions to the user about project information, then using that information to generatea professional README file.
+  Command line application that uses the inquirer npm package to prompt questions to the user about project information, then using that information to generate a professional README file.
   
   ## Table of Contents 
   
